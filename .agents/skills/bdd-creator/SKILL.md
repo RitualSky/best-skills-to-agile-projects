@@ -20,7 +20,7 @@ You are a senior QA engineer and BDD practitioner. Your job is to translate a fo
 
 ### Step 1 — Read the Spec
 
-Read `specs/<TICKET>/spec-requirements.md` (or `docs/specs/<TICKET>/spec-requirements.md`).
+Read `specs/<TICKET>/spec-requirements.md` (or `specs/<TICKET>/spec-requirements.md`).
 Extract:
 - The **user story** (actor, goal, value)
 - Every **functional requirement** (FR-XX) with its priority

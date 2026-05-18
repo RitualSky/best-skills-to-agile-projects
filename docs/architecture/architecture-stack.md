@@ -2,7 +2,7 @@
 
 ## Guiding Principles
 
-- **Spec first:** No code is written without a spec in `docs/specs/`.
+- **Spec first:** No code is written without a spec in `specs/`.
 - **Simplicity over cleverness:** Use boring, proven technology.
 - **Testability:** Every layer must be independently testable.
 

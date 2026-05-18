@@ -10,8 +10,8 @@ This repository demonstrates **Spec Driven Development (SDD)** applied to an agi
 
 ```
 1. docs/features/      → Define WHAT to build (feature scope, epics, user stories)
-2. docs/specs/<TICKET>/spec-requirements.md  → Formal requirements for one story
-3. docs/specs/<TICKET>/spec-bdd.md           → HOW to verify it (BDD scenarios)
+2. specs/<TICKET>/spec-requirements.md  → Formal requirements for one story
+3. specs/<TICKET>/spec-bdd.md           → HOW to verify it (BDD scenarios)
 4. src/                → Code that satisfies the spec
 5. test/               → Automated tests derived 1:1 from BDD scenarios
 ```
@@ -35,7 +35,7 @@ The spec is the source of truth. Code exists to satisfy the spec, not the other 
 | `docs/features/feature-*.md` | Scope and stories per feature area |
 | `docs/arch/` | Architecture decisions, stack, conventions |
 | `docs/arch/arch-data-model.md` | **Spec reference** — entities, field constraints, enums, state machine, business rules, Zod validation, spec writing guide |
-| `docs/specs/<JIRA-ID>/` | Per-ticket specification (requirements + BDD) |
+| `specs/<JIRA-ID>/` | Per-ticket specification (requirements + BDD) |
 | `src/` | Application source code |
 | `test/` | Automated tests (unit, integration, e2e) |
 | `.agents/skills/` | Claude Code skills for this project |
@@ -51,7 +51,7 @@ The spec is the source of truth. Code exists to satisfy the spec, not the other 
 ## Agent Behavior Guidelines
 
 - Always read `docs/features/main.md` first to understand the full product context.
-- Before implementing any story, read its `docs/specs/<JIRA-ID>/` files. Never code without a spec.
+- Before implementing any story, read its `specs/<JIRA-ID>/` files. Never code without a spec.
 - BDD scenarios in `spec-bdd.md` map 1:1 to test files in `test/`. Do not skip a scenario.
 - If a requirement is ambiguous, stop and ask. Do not assume.
 - Keep `src/` and `test/` mirroring each other in folder structure.

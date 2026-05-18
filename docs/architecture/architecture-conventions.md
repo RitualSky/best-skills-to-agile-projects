@@ -38,7 +38,7 @@
 
 ## Spec Mapping Rule
 
-Every BDD scenario in `docs/specs/<TICKET>/spec-bdd.md` must have a corresponding test in `test/e2e/`. The test file must reference the scenario number in its `describe` block:
+Every BDD scenario in `specs/<TICKET>/spec-bdd.md` must have a corresponding test in `test/e2e/`. The test file must reference the scenario number in its `describe` block:
 
 ```ts
 describe('JIRA-123 | Scenario 1 — Register a new customer', () => { ... })
