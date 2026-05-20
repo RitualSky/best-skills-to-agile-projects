@@ -132,6 +132,7 @@ Flujo de desarrollo guiado por especificación (SDD → BDD → TDD) orquestado 
 
 | Comando | Agente Skill | Responsabilidad Principal |
 |---|---|---|
+| `/story-enricher` | Enriquecedor de Historias de Usuario| Especializado en enriquecer las historias de usuario con detalles técnicos y contextuales  |
 | `/docs-creator` | Pre-condicional | Analiza la raíz de `@codebase`. Si no encuentra el directorio `docs/`, inicializa la estructura de carpetas estándar (`docs/architecture` y `docs/features`). |
 | `/spec-creator` | Diseñador de Contratos (SDD) | Consolida la historia de Jira, las directrices de AGENTS.md y la documentación existente para generar un documento de especificación técnica determinista y unificado. |
 | `/bdd-creator` | Analista de Comportamiento (BDD) | Traduce el documento formal de especificación en escenarios de comportamiento legibles por humanos y automatizables por máquinas (Casos de prueba en formato funcional). |
